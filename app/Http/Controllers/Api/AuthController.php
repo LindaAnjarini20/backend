@@ -123,7 +123,7 @@ class AuthController extends Controller
                 return response()->json([
                     'success' => false,
                     'message' => 'Kode OTP salah',
-                ], 422);
+                ], 400);
             }
 
             // Mark OTP as verified
